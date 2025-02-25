@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>temperature-conversion</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Main -->
+        <h1>Temperature Conversion</h1>
+        <p>Select the temperature unit you want to convert:</p>
+        <!-- Select -->
+        <label for="fromConvert">From</label>
+        <select name="fromConvert" id="fromConvert">
+            <option value="celsius">Celsius</option>
+            <option value="fahrenheit">Fahrenheit</option>
+            <option value="kelvin">Kelvin</option>
+        </select>
+        <label for="toConvert">To</label>
+        <select name="toConvert" id="toConvert">
+            <option value="celsius">Celsius</option>
+            <option value="fahrenheit">Fahrenheit</option>
+            <option value="kelvin">Kelvin</option>
+        </select>
+        <br>
+        <!-- Input -->
+        <label for="input">Input</label>
+        <input type="number" id="input" placeholder="Input temperature">
+        <button onclick="checkKhodam()">Convert</button>
+        <h2 class="hasil" id="hasil"></h2>
+
+        <!-- Foooter -->
+        <p>© Afgan Irwansyah Hidayat</p>
+        <a href="https://github.com/Afganirwansyahhidayat" class="link">My Github</a>
+    </div>
+</body>
+
+</html>
